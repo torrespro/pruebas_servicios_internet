@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+participant Consumer #lightblue
+participant Pact #aqua
+participant Provider #pink
+
+Consumer -> Pact: GET /api/topographicdetails/{city}
+rnote right #green: generates Pact File
+Pact --> Consumer:
+note over Pact
+{
+"id": "Madrid",
+"landscape": "Flat"
+}
+end note
+
+
+Pact -> Provider: GET /api/topographicdetails/{city}
+rnote left #green: uses Pact File
+Provider --> Pact: HTTP 200 OK
+note over Pact
+{
+"id": "Madrid",
+"landscape": "Flat"
+}
+end note
+
+@enduml

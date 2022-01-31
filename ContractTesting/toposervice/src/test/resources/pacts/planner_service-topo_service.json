@@ -1,0 +1,71 @@
+{
+  "consumer": {
+    "name": "planner_service"
+  },
+  "interactions": [
+    {
+      "description": "a valid request",
+      "providerStates": [
+        {
+          "name": "a landscape is returned"
+        }
+      ],
+      "request": {
+        "matchingRules": {
+          "path": {
+            "combine": "AND",
+            "matchers": [
+              {
+                "match": "regex",
+                "regex": "/api/topographicdetails/Madrid"
+              }
+            ]
+          }
+        },
+        "method": "GET",
+        "path": "/api/topographicdetails/Madrid"
+      },
+      "response": {
+        "body": {
+          "id": "Madrid",
+          "landscape": "Flat"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "matchingRules": {
+          "body": {
+            "$.id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.landscape": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-jvm": {
+      "version": "4.2.10"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "topo_service"
+  }
+}
