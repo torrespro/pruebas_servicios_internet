@@ -2,7 +2,7 @@
 
 ## Requirements
 
-[Enunciado](../requirements.md)
+[Enunciado](../Readme.md)
 
 ## Requirements
 

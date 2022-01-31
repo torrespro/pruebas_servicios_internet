@@ -1,6 +1,6 @@
 # Modulo Testing. Parte 2: Contract Testing
 
-[Enunciado](../requirements.md)
+[Enunciado](../Readme.md)
 
 ## Requirements
 

@@ -40,6 +40,10 @@ Es necesario importar la siguiente dependencia para importar la anotación:
         <scope>test</scope>
     </dependency>
 
+### Solucion
+
+[JavaLibros](./JavaLibros)
+
 ## Part 2: Contract Testing
 
 En la aplicación de la práctica 3 de la asignatura 2.1 Tecnologías de Servicios de Internet, se desarrolló una aplicación con cuatro servicios. Dicha aplicación ha sido refactorizada y se han dejado exclusivamente los servicios planner y toposervice.
@@ -51,3 +55,6 @@ El servicio planner utiliza el servicio toposervice para conocer la orografía d
 - Configurar el servicio toposervice de forma que se pueda validar el contrato contra la implementación de la API proporcionada por toposervice.
 - Se valorará mockear el TopoService para evitar tener que cargar los datos al arrancar la aplicación.
 
+### Solucion
+
+[ContractTesting](./ContractTesting)
