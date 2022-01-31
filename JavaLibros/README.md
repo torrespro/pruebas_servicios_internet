@@ -1,7 +1,5 @@
 # Modulo Testing. Parte 1: Testing en Java con Spring
 
-## Requirements
-
 [Enunciado](../Readme.md)
 
 ## Requirements
