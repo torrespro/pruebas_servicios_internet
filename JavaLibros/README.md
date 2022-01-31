@@ -36,6 +36,4 @@ Por lo general, @WebMvcTest se usa en combinación con @MockBean o @Import para 
 
 Como extra se han incluído test de la capa de datos usando [@DataJpaTest](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/autoconfigure/orm/jpa/DataJpaTest.html) y [Test Containers](https://www.testcontainers.org/)
 
-## Github Repo
-
 

@@ -94,6 +94,4 @@ docker-compose up -d # To initialize the Pact Broker
 mvn verify -Dpact.verifier.publishResults=true -Dpact.provider.version=0.0.1-SNAPSHOT -pl toposervice
 ```
 
-## Github Repo
-
 
